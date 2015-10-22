@@ -144,10 +144,12 @@ body::-webkit-scrollbar-thumb {
       .user-avatar {
         float: none;
         display: table-cell;
+        vertical-align: top;
       }
 
       .user-message-cell {
         display: table-cell;
+        vertical-align: top;
       }
 
       .user-message {
@@ -173,14 +175,13 @@ body::-webkit-scrollbar-thumb {
           top: 11px;
           left: -8px;
           z-index: -100;
-          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
           background: #f2fdff;
           content: '';
           width: calc(24px / 1.4142);
           height: calc(24px / 1.4142);
         }
       }
-
     }
   }
 }
@@ -194,6 +195,8 @@ body::-webkit-scrollbar-thumb {
 
 .user-avatar {
   float: left;
+  margin-left: 5px;
+  margin-top: 5px;
 }
 
 .div-footer {
@@ -221,7 +224,8 @@ body::-webkit-scrollbar-thumb {
     z-index: 100;
 
     .div-input {
-      margin-left: 60px;
+      margin-left: 55px;
+      margin-right: 5px;
     }
 
     .msg-input {

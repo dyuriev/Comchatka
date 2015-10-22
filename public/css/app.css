@@ -109,9 +109,11 @@ body::-webkit-scrollbar-thumb {
       display: table; }
       .div-main .div-chat .message-line .user-avatar {
         float: none;
-        display: table-cell; }
+        display: table-cell;
+        vertical-align: top; }
       .div-main .div-chat .message-line .user-message-cell {
-        display: table-cell; }
+        display: table-cell;
+        vertical-align: top; }
       .div-main .div-chat .message-line .user-message {
         position: relative;
         padding: 10px;
@@ -132,7 +134,7 @@ body::-webkit-scrollbar-thumb {
           top: 11px;
           left: -8px;
           z-index: -100;
-          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
           background: #f2fdff;
           content: '';
           width: calc(24px / 1.4142);
@@ -145,7 +147,9 @@ body::-webkit-scrollbar-thumb {
   border: 2px solid white; }
 
 .user-avatar {
-  float: left; }
+  float: left;
+  margin-left: 5px;
+  margin-top: 5px; }
 
 .div-footer {
   position: relative; }
@@ -168,7 +172,8 @@ body::-webkit-scrollbar-thumb {
     /* padding-right: 281px; */
     z-index: 100; }
     .div-footer .div-input-block .div-input {
-      margin-left: 60px; }
+      margin-left: 55px;
+      margin-right: 5px; }
     .div-footer .div-input-block .msg-input {
       width: 100%;
       line-height: 15px;
